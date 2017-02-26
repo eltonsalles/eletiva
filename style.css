@@ -7,14 +7,20 @@ section {
 }
 
 article {
+    position: relative;
     width: 300px;
+    height: 618px;
     border: 2px solid hsl(0, 0%, 0%);
     border-radius: 10px;
     display: inline-block;
 }
 
+#toy-story-3 {
+    top: -20px;
+}
+
 article img {
-    width: 100%;
+    width: 300px;
     height: 445px;
     border-radius: 10px 10px 0 0;;
 }
@@ -26,6 +32,10 @@ section .acao img {
 section .acao:hover img {
     opacity: 1;
     transition: 1s;
+}
+
+article.animacao:hover {
+    transform: scale(1.1);
 }
 
 p {
