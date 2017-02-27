@@ -31,13 +31,19 @@ p span {
 }
 
 /* Animação do primeiro gênero */
-section:first-of-type article.acao img {
-    opacity: 0.2;
+@keyframes fadeIn
+{
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 section:first-of-type article.acao:hover img {
-    opacity: 1;
-    transition: 1s;
+    animation: fadeIn 2s;
 }
 
 /* Animação do segundo gênero */
@@ -55,5 +61,91 @@ section.aventura article.aventura:hover {
 /* Animação do quarto gênero */
 article.biografia:hover {
     transform: rotateY(360deg);
+    transition: 1s;
+}
+
+/* Animação do quinto gênero */
+@keyframes swingX
+{
+    15%
+    {
+        transform: translateX(5px);
+    }
+    30%
+    {
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        transform: translateX(3px);
+    }
+    65%
+    {
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        transform: translateX(2px);
+    }
+    100%
+    {
+        transform: translateX(0);
+    }
+}
+
+section.humor article.comedia:hover {
+    animation: swingX 1s ease;
+    animation-iteration-count: 1;
+}
+
+/* Animação do sexto gênero */
+@keyframes swingY
+{
+    15%
+    {
+        transform: translateY(5px);
+    }
+    30%
+    {
+        transform: translateY(-5px);
+    }
+    50%
+    {
+        transform: translateY(3px);
+    }
+    65%
+    {
+        transform: translateY(-3px);
+    }
+    80%
+    {
+        transform: translateY(2px);
+    }
+    100%
+    {
+        transform: translateY(0);
+    }
+}
+
+section.romance article.romance:hover {
+    animation: swingY 1s ease;
+    animation-iteration-count: 1;
+}
+
+/* Animação do sétimo gênero */
+article.super-heroi:hover {
+    transform: rotateZ(360deg);
+    transition: 1s;
+}
+
+/* Animação do oitavo gênero */
+section.suspense article.suspense:hover {
+    box-shadow: 1px 1px hsl(0, 0%, 0%), 2px 2px hsl(0, 0%, 0%), 3px 3px hsl(0, 0%, 0%);
+    transform: translateX(-8px);
+}
+
+/* Animação do nono gênero */
+section.terror article.terror:hover {
+    transform: rotateX(360deg);
     transition: 1s;
 }
