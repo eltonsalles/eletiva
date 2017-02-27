@@ -3,11 +3,14 @@ body {
 }
 
 section {
-    width: 100%;
+    width: auto;
+    float: left;
+    margin-right: 5px;
 }
 
 article {
     width: 300px;
+    height: 618px;
     border: 2px solid hsl(0, 0%, 0%);
     border-radius: 10px;
     margin-bottom: 10px;
@@ -44,7 +47,8 @@ article.animacao:hover {
     transition: 1s;
 }
 
-article.aventura:hover {
+/* Animação do terceiro gênero */
+section.aventura article.aventura:hover {
     transform: scale(0.9);
     transition: 1s;
 }
