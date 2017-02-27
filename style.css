@@ -7,16 +7,11 @@ section {
 }
 
 article {
-    position: relative;
     width: 300px;
-    height: 618px;
     border: 2px solid hsl(0, 0%, 0%);
     border-radius: 10px;
+    margin-bottom: 10px;
     display: inline-block;
-}
-
-#toy-story-3 {
-    top: -20px;
 }
 
 article img {
@@ -25,23 +20,31 @@ article img {
     border-radius: 10px 10px 0 0;;
 }
 
-section .acao img {
-    opacity: 0.2;
-}
-
-section .acao:hover img {
-    opacity: 1;
-    transition: 1s;
-}
-
-article.animacao:hover {
-    transform: scale(1.1);
-}
-
 p {
-    padding: 0 10px 0 10px;
+    padding: 0 5px;
 }
 
 p span {
     font-weight: 900;
+}
+
+/* Animação do primeiro gênero */
+section:first-of-type article.acao img {
+    opacity: 0.2;
+}
+
+section:first-of-type article.acao:hover img {
+    opacity: 1;
+    transition: 1s;
+}
+
+/* Animação do segundo gênero */
+article.animacao:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+article.aventura:hover {
+    transform: scale(0.9);
+    transition: 1s;
 }
