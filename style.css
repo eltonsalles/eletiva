@@ -4,8 +4,6 @@ body {
 
 section {
     width: auto;
-    float: left;
-    margin-right: 5px;
 }
 
 article {
@@ -13,8 +11,9 @@ article {
     height: 618px;
     border: 2px solid hsl(0, 0%, 0%);
     border-radius: 10px;
+    margin-left: 10px;
     margin-bottom: 10px;
-    display: inline-block;
+    float: left;
 }
 
 article img {
@@ -50,5 +49,11 @@ article.animacao:hover {
 /* Animação do terceiro gênero */
 section.aventura article.aventura:hover {
     transform: scale(0.9);
+    transition: 1s;
+}
+
+/* Animação do quarto gênero */
+article.biografia:hover {
+    transform: rotateY(360deg);
     transition: 1s;
 }
