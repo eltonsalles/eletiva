@@ -42,7 +42,7 @@ p span {
     }
 }
 
-section:first-of-type article.acao:hover img {
+section.acao article.acao:hover img {
     animation: fadeIn 2s;
 }
 
@@ -148,4 +148,47 @@ section.suspense article.suspense:hover {
 section.terror article.terror:hover {
     transform: rotateX(360deg);
     transition: 1s;
+}
+
+/* Css para o exercício da aula 3 */
+.btn {
+    display: inline-block;
+    background-color: hsl(205, 100%, 35%);
+    color: hsl(0, 0%, 100%);
+    padding: 10px 19px;
+    margin: 5px 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    border: 0px;
+    box-shadow: 1px 1px 1px hsl(0, 0%, 60%);
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-image: linear-gradient(to bottom, transparent, hsla(0, 0%, 0%, 0.15));
+    cursor: pointer;
+}
+
+@keyframes filtro
+{
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: -9999px;
+    }
+}
+
+#botoes {
+    margin-bottom: 5px;
+}
+
+article.filtrar {
+    position: absolute;
+    left: -9999px;
+    animation: filtro 1s ease;
+    transition: 0.5s ease-in;
 }
