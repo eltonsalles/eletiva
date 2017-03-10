@@ -133,7 +133,7 @@ section.romance article.romance:hover {
 }
 
 /* Animação do sétimo gênero */
-article.super-heroi:hover {
+article.superheroi:hover {
     transform: rotateZ(360deg);
     transition: 1s;
 }
@@ -151,6 +151,7 @@ section.terror article.terror:hover {
 }
 
 /* Css para o exercício da aula 3 */
+/* Formatação dos botões */
 .btn {
     display: inline-block;
     background-color: hsl(205, 100%, 35%);
@@ -171,6 +172,7 @@ section.terror article.terror:hover {
     cursor: pointer;
 }
 
+/* Animação */
 @keyframes filtro
 {
     from {
@@ -182,13 +184,15 @@ section.terror article.terror:hover {
     }
 }
 
-#botoes {
-    margin-bottom: 5px;
-}
-
+/* Para executar a animação */
 article.filtrar {
     position: absolute;
     left: -9999px;
     animation: filtro 1s ease;
     transition: 0.5s ease-in;
+}
+
+/* Formatação da section dos botões */
+#botoes {
+    margin-bottom: 5px;
 }
