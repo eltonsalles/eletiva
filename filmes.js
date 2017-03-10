@@ -23,7 +23,7 @@ for (var i = 0; i < btn.children.length; i++) {
 				// Pega todas as categorias do respectivo filme
 				var categorias = filmes[j].classList;
 
-				// Percorre as categiras
+				// Percorre as categorias
 				for (var k = 0; k < categorias.length; k++) {
 					// Se a categoria existir então o filme não deve ser filtrado
 					if (categorias[k] == categoria) {
