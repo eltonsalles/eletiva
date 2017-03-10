@@ -185,7 +185,44 @@ section.terror article.terror:hover {
 }
 
 /* Para executar a animação */
-article.filtrar {
+body.acao article.filtrar:not(.acao),
+body.amigos article.filtrar:not(.amigos),
+body.amor article.filtrar:not(.amor),
+body.animacao article.filtrar:not(.animacao),
+body.anos90 article.filtrar:not(.anos90),
+body.aventura article.filtrar:not(.aventura),
+body.biografia article.filtrar:not(.biografia),
+body.carro article.filtrar:not(.carro),
+body.ciencia article.filtrar:not(.ciencia),
+body.comedia article.filtrar:not(.comedia),
+body.crime article.filtrar:not(.crime),
+body.dedicacao article.filtrar:not(.dedicacao),
+body.desapego article.filtrar:not(.desapego),
+body.desespero article.filtrar:not(.desespero),
+body.dinossauro article.filtrar:not(.dinossauro),
+body.drama article.filtrar:not(.drama),
+body.familia article.filtrar:not(.familia),
+body.fantasia article.filtrar:not(.fantasia),
+body.fantasma article.filtrar:not(.fantasma),
+body.ferias article.filtrar:not(.ferias),
+body.ficcao article.filtrar:not(.ficcao),
+body.guerra article.filtrar:not(.guerra),
+body.historia article.filtrar:not(.historia),
+body.humor article.filtrar:not(.humor),
+body.jogos article.filtrar:not(.jogos),
+body.medo article.filtrar:not(.medo),
+body.morte article.filtrar:not(.morte),
+body.nerd article.filtrar:not(.nerd),
+body.romance article.filtrar:not(.romance),
+body.sonho article.filtrar:not(.sonho),
+body.sucesso article.filtrar:not(.sucesso),
+body.superacao article.filtrar:not(.superacao),
+body.superheroi article.filtrar:not(.superheroi),
+body.suspense article.filtrar:not(.suspense),
+body.terror article.filtrar:not(.terror),
+body.travessura article.filtrar:not(.travessura),
+body.viagem article.filtrar:not(.viagem),
+body.violencia article.filtrar:not(.violencia) {
     position: absolute;
     left: -9999px;
     animation: filtro 1s ease;
