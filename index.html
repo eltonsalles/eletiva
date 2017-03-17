@@ -1,18 +1,59 @@
 <!doctype html>
 <html>
     <head>
-        <title>Aula 02 - Filmes</title>
+        <title>Aula 03 - Filmes</title>
         <link href="style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
+        <section id="botoes">
+            <button id="btn-acao" class="btn">Ação</button>
+            <button id="btn-amigos" class="btn">Amigos</button>
+            <button id="btn-amor" class="btn">Amor</button>
+            <button id="btn-animacao" class="btn">Animação</button>
+            <button id="btn-anos90" class="btn">Anos 90</button>
+            <button id="btn-aventura" class="btn">Aventura</button>
+            <button id="btn-biografia" class="btn">Biografia</button>
+            <button id="btn-carro" class="btn">Carro</button>
+            <button id="btn-ciencia" class="btn">Ciência</button>
+            <button id="btn-comedia" class="btn">Comédia</button>
+            <button id="btn-crime" class="btn">Crime</button>
+            <button id="btn-dedicacao" class="btn">Dedicação</button>
+            <button id="btn-desapego" class="btn">Desapego</button>
+            <button id="btn-desespero" class="btn">Desespero</button>
+            <button id="btn-dinossauro" class="btn">Dinosauro</button>
+            <button id="btn-drama" class="btn">Drama</button>
+            <button id="btn-familia" class="btn">Família</button>
+            <button id="btn-fantasia" class="btn">Fantasia</button>
+            <button id="btn-fantasma" class="btn">Fantasma</button>
+            <button id="btn-ferias" class="btn">Férias</button>
+            <button id="btn-ficcao" class="btn">Ficção</button>
+            <button id="btn-guerra" class="btn">Guerra</button>
+            <button id="btn-historia" class="btn">História</button>
+            <button id="btn-humor" class="btn">Humor</button>
+            <button id="btn-jogos" class="btn">Jogos</button>
+            <button id="btn-medo" class="btn">Medo</button>
+            <button id="btn-morte" class="btn">Morte</button>
+            <button id="btn-nerd" class="btn">Nerd</button>
+            <button id="btn-romance" class="btn">Romance</button>
+            <button id="btn-sonho" class="btn">Sonho</button>
+            <button id="btn-sucesso" class="btn">Sucesso</button>
+            <button id="btn-superacao" class="btn">Superação</button>
+            <button id="btn-superheroi" class="btn">Super Herói</button>
+            <button id="btn-suspense" class="btn">Suspense</button>
+            <button id="btn-terror" class="btn">Terror</button>
+            <button id="btn-travessura" class="btn">Travessura</button>
+            <button id="btn-viagem" class="btn">Viagem</button>
+            <button id="btn-vingaca" class="btn">Vingaça</button>
+            <button id="btn-violencia" class="btn">Violência</button>
+        </section>
         <section class="acao">
-            <article  id="300" class="acao fantasia historia violencia guerra">
+            <article  id="300" class="acao fantasia historia violencia guerra filtrar">
                 <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjAzNTkzNjcxNl5BMl5BanBnXkFtZTYwNDA4NjE3._V1_.jpg"/>
                 <p><span>Diretor:</span> Zack Snyder</p>
                 <p><span>Escritor:</span> Zack Snyder, Kurt Johnstad</p>
                 <p><span>Elenco:</span> Gerard Butler, Lena Headey, David Wenham</p>
             </article>
-            <article  id="velozes-e-furiosos-7" class="acao crime suspense carro violencia">
+            <article  id="velozes-e-furiosos-7" class="acao crime suspense carro violencia filtrar">
                 <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTQxOTA2NDUzOV5BMl5BanBnXkFtZTgwNzY2MTMxMzE@._V1_SY1000_CR0,0,631,1000_AL_.jpg"/>
                 <p><span>Diretor:</span> James Wan</p>
                 <p><span>Escritor:</span> Chris Morgan, Gary Scott Thompson</p>
@@ -20,19 +61,19 @@
             </article>
         </section>
         <section class="animacao">
-            <article  id="detona-ralph" class="animacao aventura comedia familia jogos">
+            <article  id="detona-ralph" class="animacao aventura comedia familia jogos filtrar">
                 <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNzMxNTExOTkyMF5BMl5BanBnXkFtZTcwMzEyNDc0OA@@._V1_SY1000_CR0,0,674,1000_AL_.jpg"/>
                 <p><span>Diretor:</span> Rich Moore</p>
                 <p><span>Escritor:</span> Rich Moore, Phil Johnston</p>
                 <p><span>Elenco:</span> John C. Reilly, Jack McBrayer, Jane Lynch</p>
             </article>
-            <article  id="o-bom-dinossauro" class="animacao aventura comedia familia superacao">
+            <article  id="o-bom-dinossauro" class="animacao aventura comedia familia superacao filtrar">
                 <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTc5MTg2NjQ4MV5BMl5BanBnXkFtZTgwNzcxOTY5NjE@._V1_SY1000_SX675_AL_.jpg"/>
                 <p><span>Diretor:</span> Peter Sohn</p>
                 <p><span>Escritor:</span> Bob Pererson, Peter Sohn</p>
                 <p><span>Elenco:</span> Jeffry Wright, Frances McDormand, Maleah Nipay-Padilla</p>
             </article>
-            <article  id="toy-story-3" class="animacao aventura comedia amizade desapego">
+            <article  id="toy-story-3" class="animacao aventura comedia amigos desapego filtrar">
                 <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTgxOTY4Mjc0MF5BMl5BanBnXkFtZTcwNTA4MDQyMw@@._V1_SY1000_CR0,0,707,1000_AL_.jpg"/>
                 <p><span>Diretor:</span> Nick Cassavetes</p>
                 <p><span>Escritor:</span> James Kearns</p>
@@ -40,13 +81,13 @@
             </article>
         </section>
         <section class="aventura">
-            <article  id="coracao-cavaleiro" class="acao aventura romance superacao suspense">
+            <article  id="coracao-cavaleiro" class="acao aventura romance superacao suspense filtrar">
                 <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTE5OTE4OTE2Nl5BMl5BanBnXkFtZTYwMDkzMTQ3._V1_.jpg"/>
                 <p><span>Diretor:</span> Brian Helgeland</p>
                 <p><span>Escritor:</span> Brian Helgeland</p>
                 <p><span>Elenco:</span> Heath Ledger, Mark Addy, Rufus Sewell</p>
             </article>
-            <article  id="jurassic-park" class="aventura ficcao suspense dinossauro anos-90">
+            <article  id="jurassic-park" class="aventura ficcao suspense dinossauro anos90 filtrar">
                 <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjM2MDgxMDg0Nl5BMl5BanBnXkFtZTgwNTM2OTM5NDE@._V1_.jpg"/>
                 <p><span>Diretor:</span> Steven Spielberg</p>
                 <p><span>Escritor:</span> Michael Crichton</p>
@@ -54,7 +95,7 @@
             </article>
         </section>
         <section class="biografia">
-            <article  id="a-procura-felicidade" class="biografia drama superacao sonho sucesso">
+            <article  id="a-procura-felicidade" class="biografia drama superacao sonho sucesso filtrar">
                 <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ5NjQ0NDI3NF5BMl5BanBnXkFtZTcwNDI0MjEzMw@@._V1_SY1000_CR0,0,672,1000_AL_.jpg"/>
                 <p><span>Diretor:</span> Gabriele Muccino</p>
                 <p><span>Escritor:</span> Steve Conrad</p>
@@ -62,13 +103,13 @@
             </article>
         </section>
         <section class="humor">
-            <article  id="esqueceram-de-mim" class="comedia familia aventura travessura anos-90">
+            <article  id="esqueceram-de-mim" class="comedia familia aventura travessura anos90 filtrar">
                 <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNmQzYjEzYTQtNzNhZi00NmEwLThiZDMtMWYyNjRmZWY0ZTdkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,671,1000_AL_.jpg"/>
                 <p><span>Diretor:</span> Chris Columbus</p>
                 <p><span>Escritor:</span> John Hughes</p>
                 <p><span>Elenco:</span> Macaulay Culkin, Joe Pesci, Daniel Stern</p>
             </article>
-            <article  id="the-big-bang-theory" class="comedia romance nerd amigos ciencia">
+            <article  id="the-big-bang-theory" class="comedia romance nerd amigos ciencia filtrar">
                 <img src="https://s-media-cache-ak0.pinimg.com/736x/c8/87/62/c887628fb860faf2d56b10c401469e1b.jpg"/>
                 <p><span>Diretor:</span> -</p>
                 <p><span>Escritor:</span> Chuck Lorre, Bill Prady</p>
@@ -76,39 +117,39 @@
             </article>
         </section>
         <section class="romance">
-            <article  id="how-i-met-your-mother" class="comedia romance suspense amigos familia">
+            <article  id="how-i-met-your-mother" class="comedia romance suspense amigos familia filtrar">
                 <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTA5MzAzNTcyNjZeQTJeQWpwZ15BbWU3MDUyMzE1MTk@._V1_.jpg"/>
                 <p><span>Diretor:</span> -</p>
                 <p><span>Escritor:</span> Carter Bays, Craig Thomas</p>
                 <p><span>Elenco:</span> Josh Radnor, Jason Segel, Cobie Smulders</p>
             </article>
-            <article  id="diario-de-uma-paixao" class="drama romance amor familia dedicacao">
+            <article  id="diario-de-uma-paixao" class="drama romance amor familia dedicacao filtrar">
                 <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTk3OTM5Njg5M15BMl5BanBnXkFtZTYwMzA0ODI3._V1_.jpg"/>
                 <p><span>Diretor:</span> Nick Cassavetes</p>
                 <p><span>Escritor:</span> Jeremy Leven, Jan Sardi</p>
                 <p><span>Elenco:</span> Gena Rowlands, James Garner, Rachel McAdams</p>
             </article>
-            <article  id="o-amor-nao-tira-ferias" class="comedia romance humor ferias viagem">
+            <article  id="o-amor-nao-tira-ferias" class="comedia romance humor ferias viagem filtrar">
                 <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTM2MzEyNDkxNF5BMl5BanBnXkFtZTcwODE5NjkzMQ@@._V1_.jpg"/>
                 <p><span>Diretor:</span> Nancy Meyers</p>
                 <p><span>Escritor:</span> Nancy Meyers</p>
                 <p><span>Elenco:</span> Kate Winslet, Cameron Diaz, Jude Law, Jack Black</p>
             </article>
         </section>
-        <section class="super-heroi">
-            <article  id="batman-o-cavaleiro-das-trevas" class="acao crime drama super-heroi aventura">
+        <section class="superheroi">
+            <article  id="batman-o-cavaleiro-das-trevas" class="acao crime drama superheroi aventura filtrar">
                 <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SY1000_CR0,0,675,1000_AL_.jpg"/>
                 <p><span>Diretor:</span> Christopher Nolan</p>
                 <p><span>Escritor:</span> Jonathan Nolan, Cristopher Nolan</p>
                 <p><span>Elenco:</span> Christian Bale, Heath Ledger, Aaron Eckhart</p>
             </article>
-            <article  id="dead-pool" class="acao aventura comedia romance super-heroi">
+            <article  id="dead-pool" class="acao aventura comedia romance superheroi filtrar">
                 <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjQyODg5Njc4N15BMl5BanBnXkFtZTgwMzExMjE3NzE@._V1_SY1000_SX686_AL_.jpg"/>
                 <p><span>Diretor:</span> Tim Miller</p>
                 <p><span>Escritor:</span> Rhett Reese, Paul Wernick</p>
                 <p><span>Elenco:</span> Ryan Reynolds, Morena Baccarin, T. J. Miller</p>
             </article>
-            <article  id="o-espetacular-homem-aranha" class="acao aventura super-heroi suspense romance">
+            <article  id="o-espetacular-homem-aranha" class="acao aventura superheroi suspense romance filtrar">
                 <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjMyOTM4MDMxNV5BMl5BanBnXkFtZTcwNjIyNzExOA@@._V1_SY1000_CR0,0,674,1000_AL_.jpg"/>
                 <p><span>Diretor:</span> Marc Webb</p>
                 <p><span>Escritor:</span> James Vanderbilt, Alvin Sargetn</p>
@@ -116,19 +157,19 @@
             </article>
         </section>
         <section class="suspense">
-            <article  id="dia-de-treinamento" class="crime drama suspense violencia vingaca">
+            <article  id="dia-de-treinamento" class="crime drama suspense violencia vingaca filtrar">
                 <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMDZkMTUxYWEtMDY5NS00ZTA5LTg3MTItNTlkZWE1YWRjYjMwL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,666,1000_AL_.jpg"/>
                 <p><span>Diretor:</span> Antoine Fuqua</p>
                 <p><span>Escritor:</span> David Ayer</p>
                 <p><span>Elenco:</span> Denzel Washington, Ethan Hawke, Scott Glenn</p>
             </article>
-            <article  id="prison-break" class="acao crime drama violencia suspense">
+            <article  id="prison-break" class="acao crime drama violencia suspense filtrar">
                 <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTg3NTkwNzAxOF5BMl5BanBnXkFtZTcwMjM1NjI5MQ@@._V1_.jpg"/>
                 <p><span>Diretor:</span> -</p>
                 <p><span>Escritor:</span> Paul Scheuring</p>
                 <p><span>Elenco:</span> Dominic Purcell, Wentworth Miller, Amaury Nolasco</p>
             </article>
-            <article  id="um-ato-de-coragem" class="crime drama suspense desespero familia">
+            <article  id="um-ato-de-coragem" class="crime drama suspense desespero familia filtrar">
                 <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTcxNTQ1MzAyOF5BMl5BanBnXkFtZTYwNDg0ODk4._V1_.jpg"/>
                 <p><span>Diretor:</span> Lee Unkrich</p>
                 <p><span>Escritor:</span> John Lasseter, Andrew Stanto</p>
@@ -136,12 +177,13 @@
             </article>
         </section>
         <section class="terror">
-            <article  id="os-outros" class="terror suspense fantasma medo morte">
+            <article  id="os-outros" class="terror suspense fantasma medo morte filtrar">
                 <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTAxMDE4Mzc3ODNeQTJeQWpwZ15BbWU4MDY2Mjg4MDcx._V1_SY1000_CR0,0,681,1000_AL_.jpg"/>
                 <p><span>Diretor:</span> Alejandro Amenábar</p>
                 <p><span>Escritor:</span> Alejandro Amenábar</p>
                 <p><span>Elenco:</span> Nicole Kidman, Christopher Eccleston, Fionnula Flanagan</p>
             </article>
         </section>
+        <script src="filmes.js" type="text/javascript"></script>
     </body>
 </html>
