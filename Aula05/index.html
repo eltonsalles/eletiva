@@ -13,7 +13,107 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <h1>Hello, world!</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <br><br><br>
+                    <form action="http://www.promocoesespetaculares.com.br/sistema/pascoa/cadastrarCliente.action">
+                        <div class="form-group col-md-4">
+                            <label for="nome">Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Nome" name="nome">
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" class="form-control" id="sobrenome" placeholder="Sobrenome" name="sobrenome">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="nascimento">Data de Nascimento</label>
+                            <input type="date" class="form-control" id="nascimento" name="nascimento">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="nf">Número Fiscal</label>
+                            <input type="text" class="form-control" id="nf" name="nf">
+                        </div>
+                        <div class="checkbox col-md-12">
+                            <span class="titulo-checkbox">Itens</span>
+                            <br>
+                            <label>
+                                <input value="Coelho de Chocolate 500g" name="items" type="checkbox"> Coelho de Chocolate 500g
+                            </label>
+                            <br>
+                            <label>
+                                <input value="Meias Cinza 42" name="items" type="checkbox"> Meias Cinza 42
+                            </label>
+                            <br>
+                            <label>
+                                <input value="Bicicleta 36 Marchas" name="items" type="checkbox"> Bicicleta 36 Marchas
+                            </label>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="data">Data da Venda</label>
+                            <input type="date" class="form-control" id="data" value="2017-03-20" name="data">
+                        </div>
+                        <div class="radio col-md-12">
+                            <span>Sexo</span><br>
+                            <label>
+                                <input type="radio" name="sexo" id="feminino" value="masculino">
+                                Masculino
+                            </label>
+                        </div>
+                        <div class="radio col-md-12">
+                            <label>
+                                <input type="radio" name="sexo" id="masculino" value="feminino">
+                                Feminino
+                            </label>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="total">Total</label>
+                            <input type="text" class="form-control" id="total" placeholder="0.00" name="total">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="loja">Loja</label>
+                            <input type="text" class="form-control" id="loja" placeholder="Loja" name="loja">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="resposta">Resposta</label>
+                            <textarea class="form-control" rows="6" id="resposta" placeholder="Resposta" name="resposta"></textarea>
+                        </div>
+                        <div class="checkbox col-md-12">
+                            <span class="titulo-checkbox">Prêmios</span>
+                            <br>
+                            <label>
+                                <input value="Viagem para a Ilha de Páscoa" name="premios[2]" type="checkbox"> Viagem para a Ilha de Páscoa
+                            </label>
+                            <br>
+                            <label>
+                                <input value="Coelho Inflável Bunnys Zord Tamalho Real" name="premios[1]" type="checkbox"> Coelho Inflável Bunnys Zord Tamalho Real
+                            </label>
+                            <br>
+                            <label>
+                                <input value="Sal de Frutas Especial de Páscoa" name="premios[3]" type="checkbox"> Sal de Frutas Especial de Páscoa
+                            </label>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="brinde">Brinde</label>
+                            <select class="form-control" name="brinde">
+                                <option>---</option>
+                                <option>Chocolate Amargo 50 porcento cacau</option>
+                                <option>Chocolate Amargo 100 porcento cacau</option>
+                                <option>Chocolate Amargo 200 porcento cacau</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="id">Id</label>
+                            <input type="text" class="form-control" id="id" placeholder="Id" name="id">
+                        </div>
+                        <div class="col-md-2">
+                            <button type="submit" class="btn btn-default">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
