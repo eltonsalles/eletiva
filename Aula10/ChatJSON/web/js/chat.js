@@ -9,7 +9,6 @@ function iniciar(){
 
 function listar(evt){
     listaUsuarios = JSON.parse(evt.target.responseText);
-    limpar();
     listaUsuarios.forEach(u => print(u));
 }
 
