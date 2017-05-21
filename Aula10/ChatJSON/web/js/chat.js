@@ -13,10 +13,6 @@ function listar(evt){
     listaUsuarios.forEach(u => print(u));
 }
 
-function limpar(){
-  
-}
-
 function print(usuario){
     var p = document.createElement("p");
     p.textContent = usuario.username;
@@ -30,5 +26,9 @@ function atualizarLista(){
     listaService.addEventListener("load",listar);
     listaService.send();
 }
+
+window.onload = function () {
+    setTimeout('location.reload();', 20000);
+};
 
 window.addEventListener("load",iniciar);

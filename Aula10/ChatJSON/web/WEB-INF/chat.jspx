@@ -13,9 +13,11 @@
        <body>
            <h1>Bem-vindo <span>${eu.username}</span></h1>
            <div class="usuarios"></div>
-           <textarea class="conversa" rows="5" cols="100">.</textarea>
-           <input type="text" class="texto" value="" />
-           <input type="button" class="enviar" value="Enviar" />
+           <form action="EnvioMensagem" method="post">
+               <textarea class="conversa" name="conversa" rows="5" cols="100" readonly="readonly">${conversa}</textarea>
+               <input type="text" class="texto" name="texto" value="" />
+               <input type="submit" class="enviar" value="Enviar" />
+           </form>
        </body>
    </html>
 
