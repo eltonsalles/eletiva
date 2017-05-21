@@ -14,9 +14,7 @@ function listar(evt){
 }
 
 function limpar(){
-  while(divUsuarios.childNodes.length > 0){
-        divUsuarios.removeChild(divUsuarios.firstChild);
-    }  
+  
 }
 
 function print(usuario){
