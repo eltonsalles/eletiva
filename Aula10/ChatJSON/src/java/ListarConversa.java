@@ -14,9 +14,9 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author daniel.psavoy
+ * @author Elton
  */
-public class Autenticar extends HttpServlet {
+public class ListarConversa extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -29,33 +29,31 @@ public class Autenticar extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-        String username = request.getParameter("username");
-        String imageUrl = request.getParameter("imageUrl");
-        
-        if(username != null && username.length() > 2){
-            Usuario usuario = new Usuario(username, imageUrl);
-            request.getSession().setAttribute("eu", usuario);
-            ArrayList<Usuario> logados = (ArrayList) request
-                    .getServletContext().getAttribute("logados");
-            if(logados == null){
-                logados = new ArrayList<Usuario>();
-                request.getServletContext().setAttribute("logados", logados);
-            }
-            logados.add(usuario);
-            
+        response.setContentType("text/json;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
             ArrayList<String[]> conversas = (ArrayList) request
-                    .getServletContext().getAttribute("conversas");
-            if(conversas == null){
-                conversas = new ArrayList<String[]>();
-                request.getServletContext().setAttribute("conversas", conversas);
+                        .getServletContext()
+                        .getAttribute("conversas");
+            
+            out.print("[");
+            for(int i = 0; i < conversas.size(); i++){
+                out.print(this.json(conversas.get(i)[0], conversas.get(i)[1]));
+                if(i < conversas.size()-1){ 
+                    out.print(",");
+                }
             }
+            out.print("]");
         }
+    }
+    
+    private String json(String username, String texto) {
+        String json = "{";
+        json += "\"username\":\""+username+"\", ";
+        json += "\"texto\":\""+texto+"\"";
+        json += "}";
         
-        response.sendRedirect("Conversar");
-        
-        /*request.getRequestDispatcher("/WEB-INF/chat.jspx")
-                .forward(request, response);*/
+        return json;
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

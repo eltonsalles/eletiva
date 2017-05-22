@@ -5,6 +5,7 @@
  */
 
 import java.io.IOException;
+import java.util.ArrayList;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -20,14 +21,16 @@ public class EnvioMensagem extends HttpServlet {
     protected void service(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
         if (request.getMethod().equalsIgnoreCase("post")) {
-            if (request.getParameter("conversa") != null
-                    && request.getParameter("texto") != null) {
-                String conversa = request.getParameter("conversa");
+            if (request.getParameter("texto") != null) {
                 String texto = request.getParameter("texto");
                 Usuario usuario = (Usuario) request.getSession()
                         .getAttribute("eu");
                 
-                request.getServletContext().setAttribute("conversa", conversa + " " + usuario.getUsername() + ": " + texto);
+                ArrayList<String[]> conversas = (ArrayList) request.getServletContext().getAttribute("conversas");
+                
+                conversas.add(new String[]{usuario.getUsername(), texto});
+                
+                //request.getServletContext().setAttribute("conversa", conversa + " " + usuario.getUsername() + ": " + texto);
                 
                 response.sendRedirect("Conversar");
             }

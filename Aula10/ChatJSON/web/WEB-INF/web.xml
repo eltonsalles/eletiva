@@ -20,6 +20,10 @@
         <servlet-name>EnvioMensagem</servlet-name>
         <servlet-class>EnvioMensagem</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ListarConversa</servlet-name>
+        <servlet-class>ListarConversa</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Iniciar</servlet-name>
         <url-pattern>/Iniciar</url-pattern>
@@ -40,6 +44,10 @@
     <servlet-mapping>
         <servlet-name>EnvioMensagem</servlet-name>
         <url-pattern>/EnvioMensagem</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListarConversa</servlet-name>
+        <url-pattern>/ListarConversa</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

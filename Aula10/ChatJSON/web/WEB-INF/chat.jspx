@@ -14,7 +14,7 @@
            <h1>Bem-vindo <span>${eu.username}</span></h1>
            <div class="usuarios"></div>
            <form action="EnvioMensagem" method="post">
-               <textarea class="conversa" name="conversa" rows="5" cols="100" readonly="readonly">${conversa}</textarea>
+               <textarea class="conversa" name="conversa" rows="5" cols="100" readonly="readonly">.</textarea>
                <input type="text" class="texto" name="texto" value="" />
                <input type="submit" class="enviar" value="Enviar" />
            </form>
